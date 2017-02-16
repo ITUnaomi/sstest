@@ -79,7 +79,7 @@ public class FonctionIT {
         emp.setDateNaissance("29/10/1998");
         Fonction instance = new Fonction();
         boolean expResult = true;
-        boolean result = instance.Insert(emp);
+        boolean result = emp.insert();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }

@@ -60,6 +60,10 @@ public class Connexion{
 			arret(e.getMessage());
 		}
     }
+    public String createUpdateStatement(String nom,String nomCol,String valCol,String cond,String valcond){
+	   String requete="UPDATE "+nom+" SET "+nomCol+" = '"+valCol+"' WHERE "+cond+"='"+valcond+"'";
+		return requete;
+	}
     public void drop(String requete)
     {
     	try{
